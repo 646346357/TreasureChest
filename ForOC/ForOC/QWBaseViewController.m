@@ -6,6 +6,7 @@
 //
 
 #import "QWBaseViewController.h"
+#import <Masonry/Masonry.h>
 
 @interface QWNoteViewController : UIViewController
 
@@ -53,11 +54,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    UITextView *noteView = [[UITextView alloc] initWithFrame:self.view.bounds];
+    UITextView *noteView = [[UITextView alloc] init];
     noteView.text = self.note;
     noteView.font = [UIFont systemFontOfSize:15];
     noteView.editable = false;
     [self.view addSubview:noteView];
+    [noteView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsZero);
+    }];
 }
 
 @end

@@ -15,6 +15,7 @@
 		3058504C28ED7ABC00437227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3058504A28ED7ABC00437227 /* LaunchScreen.storyboard */; };
 		3058504F28ED7ABC00437227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058504E28ED7ABC00437227 /* main.m */; };
 		3058505728ED819D00437227 /* QWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058505628ED819D00437227 /* QWBaseViewController.m */; };
+		6C854F38B5857715EFAD3C8A /* libPods-ForOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 561D9F1709AABA243C411245 /* libPods-ForOC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		3058504E28ED7ABC00437227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3058505528ED819D00437227 /* QWBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWBaseViewController.h; sourceTree = "<group>"; };
 		3058505628ED819D00437227 /* QWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWBaseViewController.m; sourceTree = "<group>"; };
+		561D9F1709AABA243C411245 /* libPods-ForOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65285381D1A692827B848390 /* Pods-ForOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForOC.debug.xcconfig"; path = "Target Support Files/Pods-ForOC/Pods-ForOC.debug.xcconfig"; sourceTree = "<group>"; };
+		EF8013501C0472173CA88EEF /* Pods-ForOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForOC.release.xcconfig"; path = "Target Support Files/Pods-ForOC/Pods-ForOC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C854F38B5857715EFAD3C8A /* libPods-ForOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				3058503B28ED7ABB00437227 /* ForOC */,
 				3058503A28ED7ABB00437227 /* Products */,
+				B7A0B5D2C7725A5E02AD4B52 /* Pods */,
+				3BF7893F6086E8906CCE0462 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +88,24 @@
 			path = ForOC;
 			sourceTree = "<group>";
 		};
+		3BF7893F6086E8906CCE0462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				561D9F1709AABA243C411245 /* libPods-ForOC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7A0B5D2C7725A5E02AD4B52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65285381D1A692827B848390 /* Pods-ForOC.debug.xcconfig */,
+				EF8013501C0472173CA88EEF /* Pods-ForOC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3058505228ED7ABC00437227 /* Build configuration list for PBXNativeTarget "ForOC" */;
 			buildPhases = (
+				7FD56D797595BDCDF847A99F /* [CP] Check Pods Manifest.lock */,
 				3058503528ED7ABB00437227 /* Sources */,
 				3058503628ED7ABB00437227 /* Frameworks */,
 				3058503728ED7ABB00437227 /* Resources */,
@@ -145,6 +171,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FD56D797595BDCDF847A99F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3058503528ED7ABB00437227 /* Sources */ = {
@@ -293,6 +344,7 @@
 		};
 		3058505328ED7ABC00437227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65285381D1A692827B848390 /* Pods-ForOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,6 +372,7 @@
 		};
 		3058505428ED7ABC00437227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8013501C0472173CA88EEF /* Pods-ForOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
