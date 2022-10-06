@@ -29,7 +29,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.note = [NSMutableString string];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"笔记" style:UIBarButtonItemStylePlain target:self action:@selector(openNote)];
-    [self.note appendString:@"sdasdsad"];
+    [self.note appendString:@"内容：\n"];
 
 }
 
