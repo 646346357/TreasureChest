@@ -42,5 +42,14 @@ post_install do |installer|
             # Needed for building for simulator on M1 Macs
             config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
         end
+        # 开启 RxSwift.Resources.total
+        if target.name == 'RxSwift'
+            target.build_configurations.each do |config|
+                if config.name == 'Debug'
+                    config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['-D', 'TRACE_RESOURCES']
+                end
+            end
+        end
     end
 end
+

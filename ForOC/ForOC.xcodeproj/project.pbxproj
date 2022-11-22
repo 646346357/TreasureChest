@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300BCE3529229DC700B46A20 /* QWSDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300BCE3429229DC700B46A20 /* QWSDViewController.m */; };
+		303204D928F908E200B9AE65 /* QWRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303204D828F908E200B9AE65 /* QWRuntimeViewController.m */; };
+		304062E228FE417700D8DB29 /* QWThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304062E128FE417700D8DB29 /* QWThreadViewController.m */; };
+		304062E528FE9B8C00D8DB29 /* QWProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304062E428FE9B8C00D8DB29 /* QWProxyViewController.m */; };
 		3058503E28ED7ABB00437227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058503D28ED7ABB00437227 /* AppDelegate.m */; };
 		3058504128ED7ABB00437227 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058504028ED7ABB00437227 /* SceneDelegate.m */; };
 		3058504428ED7ABB00437227 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058504328ED7ABB00437227 /* ViewController.m */; };
@@ -15,10 +19,21 @@
 		3058504C28ED7ABC00437227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3058504A28ED7ABC00437227 /* LaunchScreen.storyboard */; };
 		3058504F28ED7ABC00437227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058504E28ED7ABC00437227 /* main.m */; };
 		3058505728ED819D00437227 /* QWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058505628ED819D00437227 /* QWBaseViewController.m */; };
+		30AE84DB28F86A1F009F100C /* QWBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AE84DA28F86A1F009F100C /* QWBlockViewController.m */; };
+		30B3E5262903E4CE00D31F42 /* QWUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B3E5252903E4CE00D31F42 /* QWUIViewController.m */; };
+		30CDD1302902810A00F81C90 /* QWMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CDD12F2902810A00F81C90 /* QWMemoryViewController.m */; };
 		6C854F38B5857715EFAD3C8A /* libPods-ForOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 561D9F1709AABA243C411245 /* libPods-ForOC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300BCE3329229DC700B46A20 /* QWSDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWSDViewController.h; sourceTree = "<group>"; };
+		300BCE3429229DC700B46A20 /* QWSDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWSDViewController.m; sourceTree = "<group>"; };
+		303204D728F908E200B9AE65 /* QWRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWRuntimeViewController.h; sourceTree = "<group>"; };
+		303204D828F908E200B9AE65 /* QWRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWRuntimeViewController.m; sourceTree = "<group>"; };
+		304062E028FE417700D8DB29 /* QWThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWThreadViewController.h; sourceTree = "<group>"; };
+		304062E128FE417700D8DB29 /* QWThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWThreadViewController.m; sourceTree = "<group>"; };
+		304062E328FE9B8C00D8DB29 /* QWProxyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWProxyViewController.h; sourceTree = "<group>"; };
+		304062E428FE9B8C00D8DB29 /* QWProxyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWProxyViewController.m; sourceTree = "<group>"; };
 		3058503928ED7ABB00437227 /* ForOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3058503C28ED7ABB00437227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3058503D28ED7ABB00437227 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,6 +48,12 @@
 		3058504E28ED7ABC00437227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3058505528ED819D00437227 /* QWBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWBaseViewController.h; sourceTree = "<group>"; };
 		3058505628ED819D00437227 /* QWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWBaseViewController.m; sourceTree = "<group>"; };
+		30AE84D928F86A1F009F100C /* QWBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWBlockViewController.h; sourceTree = "<group>"; };
+		30AE84DA28F86A1F009F100C /* QWBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWBlockViewController.m; sourceTree = "<group>"; };
+		30B3E5242903E4CE00D31F42 /* QWUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWUIViewController.h; sourceTree = "<group>"; };
+		30B3E5252903E4CE00D31F42 /* QWUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWUIViewController.m; sourceTree = "<group>"; };
+		30CDD12E2902810A00F81C90 /* QWMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QWMemoryViewController.h; sourceTree = "<group>"; };
+		30CDD12F2902810A00F81C90 /* QWMemoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QWMemoryViewController.m; sourceTree = "<group>"; };
 		561D9F1709AABA243C411245 /* libPods-ForOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65285381D1A692827B848390 /* Pods-ForOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForOC.debug.xcconfig"; path = "Target Support Files/Pods-ForOC/Pods-ForOC.debug.xcconfig"; sourceTree = "<group>"; };
 		EF8013501C0472173CA88EEF /* Pods-ForOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForOC.release.xcconfig"; path = "Target Support Files/Pods-ForOC/Pods-ForOC.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +100,20 @@
 				3058504328ED7ABB00437227 /* ViewController.m */,
 				3058505528ED819D00437227 /* QWBaseViewController.h */,
 				3058505628ED819D00437227 /* QWBaseViewController.m */,
+				30AE84D928F86A1F009F100C /* QWBlockViewController.h */,
+				30AE84DA28F86A1F009F100C /* QWBlockViewController.m */,
+				303204D728F908E200B9AE65 /* QWRuntimeViewController.h */,
+				303204D828F908E200B9AE65 /* QWRuntimeViewController.m */,
+				304062E028FE417700D8DB29 /* QWThreadViewController.h */,
+				304062E128FE417700D8DB29 /* QWThreadViewController.m */,
+				304062E328FE9B8C00D8DB29 /* QWProxyViewController.h */,
+				304062E428FE9B8C00D8DB29 /* QWProxyViewController.m */,
+				30CDD12E2902810A00F81C90 /* QWMemoryViewController.h */,
+				30CDD12F2902810A00F81C90 /* QWMemoryViewController.m */,
+				30B3E5242903E4CE00D31F42 /* QWUIViewController.h */,
+				30B3E5252903E4CE00D31F42 /* QWUIViewController.m */,
+				300BCE3329229DC700B46A20 /* QWSDViewController.h */,
+				300BCE3429229DC700B46A20 /* QWSDViewController.m */,
 				3058504528ED7ABB00437227 /* Main.storyboard */,
 				3058504828ED7ABC00437227 /* Assets.xcassets */,
 				3058504A28ED7ABC00437227 /* LaunchScreen.storyboard */,
@@ -102,7 +137,6 @@
 				65285381D1A692827B848390 /* Pods-ForOC.debug.xcconfig */,
 				EF8013501C0472173CA88EEF /* Pods-ForOC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -202,9 +236,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B3E5262903E4CE00D31F42 /* QWUIViewController.m in Sources */,
+				303204D928F908E200B9AE65 /* QWRuntimeViewController.m in Sources */,
 				3058505728ED819D00437227 /* QWBaseViewController.m in Sources */,
+				304062E228FE417700D8DB29 /* QWThreadViewController.m in Sources */,
+				304062E528FE9B8C00D8DB29 /* QWProxyViewController.m in Sources */,
 				3058504428ED7ABB00437227 /* ViewController.m in Sources */,
+				30AE84DB28F86A1F009F100C /* QWBlockViewController.m in Sources */,
 				3058503E28ED7ABB00437227 /* AppDelegate.m in Sources */,
+				30CDD1302902810A00F81C90 /* QWMemoryViewController.m in Sources */,
+				300BCE3529229DC700B46A20 /* QWSDViewController.m in Sources */,
 				3058504F28ED7ABC00437227 /* main.m in Sources */,
 				3058504128ED7ABB00437227 /* SceneDelegate.m in Sources */,
 			);
@@ -350,6 +391,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA44RU85VN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ForOC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -378,6 +420,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA44RU85VN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ForOC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

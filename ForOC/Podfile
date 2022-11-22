@@ -8,5 +8,6 @@ target 'ForOC' do
 pod 'AFNetworking'
 pod 'YYKit'
 pod 'Masonry'
+pod 'SDWebImage'
 
 end

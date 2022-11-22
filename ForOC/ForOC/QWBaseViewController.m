@@ -29,13 +29,17 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.note = [NSMutableString string];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"笔记" style:UIBarButtonItemStylePlain target:self action:@selector(openNote)];
-    [self.note appendString:@"内容：\n"];
-
+    
+    [self writeNote];
 }
 
 - (void)openNote {
     QWNoteViewController *noteVC = [[QWNoteViewController alloc] initWithNote:self.note];
     [self presentViewController:noteVC animated:YES completion:nil];
+}
+
+- (void)writeNote {
+    [self.note appendString:@"内容：\n"];
 }
 
 @end
@@ -58,10 +62,12 @@
     noteView.text = self.note;
     noteView.font = [UIFont systemFontOfSize:15];
     noteView.editable = false;
+    noteView.textContainer.lineBreakMode = NSLineBreakByClipping;
     [self.view addSubview:noteView];
     [noteView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
 }
+
 
 @end

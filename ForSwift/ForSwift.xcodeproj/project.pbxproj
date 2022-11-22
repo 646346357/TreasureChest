@@ -14,6 +14,9 @@
 		30AC117228EE848F003434EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC117128EE848F003434EC /* Assets.xcassets */; };
 		30AC117528EE848F003434EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AC117328EE848F003434EC /* LaunchScreen.storyboard */; };
 		30AC117D28EE853A003434EC /* QWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC117C28EE853A003434EC /* QWBaseViewController.swift */; };
+		30AC117F28EEC6F5003434EC /* QWRXSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC117E28EEC6F5003434EC /* QWRXSwiftViewController.swift */; };
+		30ADA5482907877400B9F9A8 /* QWRXCocoaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ADA5472907877400B9F9A8 /* QWRXCocoaViewController.swift */; };
+		30AEC6A528F0185800CAA0C3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEC6A428F0185800CAA0C3 /* UIViewExtension.swift */; };
 		4DD685C7CCBA5F909D06CCD6 /* Pods_ForSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEEC293D81C0B812CDF3A2F /* Pods_ForSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		30AC117428EE848F003434EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30AC117628EE848F003434EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30AC117C28EE853A003434EC /* QWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWBaseViewController.swift; sourceTree = "<group>"; };
+		30AC117E28EEC6F5003434EC /* QWRXSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWRXSwiftViewController.swift; sourceTree = "<group>"; };
+		30ADA5472907877400B9F9A8 /* QWRXCocoaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWRXCocoaViewController.swift; sourceTree = "<group>"; };
+		30AEC6A428F0185800CAA0C3 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		7D047F8B7601B2DB82D4D682 /* Pods-ForSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForSwift.release.xcconfig"; path = "Target Support Files/Pods-ForSwift/Pods-ForSwift.release.xcconfig"; sourceTree = "<group>"; };
 		8AEEC293D81C0B812CDF3A2F /* Pods_ForSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE6D8FA72785CEAF02CC1D2 /* Pods-ForSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForSwift.debug.xcconfig"; path = "Target Support Files/Pods-ForSwift/Pods-ForSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,12 +75,23 @@
 				30AC116A28EE848D003434EC /* SceneDelegate.swift */,
 				30AC116C28EE848D003434EC /* ViewController.swift */,
 				30AC117C28EE853A003434EC /* QWBaseViewController.swift */,
+				30AC117E28EEC6F5003434EC /* QWRXSwiftViewController.swift */,
+				30ADA5472907877400B9F9A8 /* QWRXCocoaViewController.swift */,
 				30AC116E28EE848D003434EC /* Main.storyboard */,
 				30AC117128EE848F003434EC /* Assets.xcassets */,
 				30AC117328EE848F003434EC /* LaunchScreen.storyboard */,
+				30AEC6A328F0185800CAA0C3 /* Utils */,
 				30AC117628EE848F003434EC /* Info.plist */,
 			);
 			path = ForSwift;
+			sourceTree = "<group>";
+		};
+		30AEC6A328F0185800CAA0C3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30AEC6A428F0185800CAA0C3 /* UIViewExtension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9BA961B4F45BDF2A01F7D500 /* Frameworks */ = {
@@ -91,7 +108,6 @@
 				EAE6D8FA72785CEAF02CC1D2 /* Pods-ForSwift.debug.xcconfig */,
 				7D047F8B7601B2DB82D4D682 /* Pods-ForSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,7 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AEC6A528F0185800CAA0C3 /* UIViewExtension.swift in Sources */,
+				30AC117F28EEC6F5003434EC /* QWRXSwiftViewController.swift in Sources */,
 				30AC116D28EE848D003434EC /* ViewController.swift in Sources */,
+				30ADA5482907877400B9F9A8 /* QWRXCocoaViewController.swift in Sources */,
 				30AC116928EE848D003434EC /* AppDelegate.swift in Sources */,
 				30AC116B28EE848D003434EC /* SceneDelegate.swift in Sources */,
 				30AC117D28EE853A003434EC /* QWBaseViewController.swift in Sources */,

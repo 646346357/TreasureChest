@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import RxSwift
 
 class QWNoteViewController: UIViewController {
     private let note: String
+    private let bag = DisposeBag()
     private lazy var noteView = UITextView().then{
         $0.text = note
         $0.font = .systemFont(ofSize: 15)
@@ -30,10 +32,18 @@ class QWNoteViewController: UIViewController {
         view.addSubview(noteView)
         
         noteView.snp.makeConstraints{
-            $0.edges.equalToSuperview()
+            $0.left.right.bottom.equalToSuperview()
+            $0.top.equalTo(CGFloat.jf.navigationBarHeight())
         }
+        
+        noteView.addTapForView().subscribe{[weak self] _ in
+            self?.dismiss(animated: true)
+        }.disposed(by: bag)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true)
+    }
 }
 
 class QWBaseViewController: UIViewController {
@@ -43,11 +53,16 @@ class QWBaseViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "笔记", style: .plain, target: self, action: #selector(openNote))
-        note.append(contentsOf: "内容：\n")
+        writeNote()
     }
     
     @objc func openNote() {
         let vc = QWNoteViewController(note: note)
+//        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
+    }
+    
+    func writeNote() {
+        note.append(contentsOf: "内容：\n")
     }
 }
